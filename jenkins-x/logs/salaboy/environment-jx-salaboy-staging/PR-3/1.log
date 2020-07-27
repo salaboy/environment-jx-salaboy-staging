@@ -1,0 +1,40 @@
+
+Showing logs for build [32msalaboy-environment-jx-salaboy-8nh6l-1[0m stage [32mfrom-build-pack[0m and container [32mcredential-initializer[0m
+{"level":"info","ts":1595835784.4216437,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
+
+Showing logs for build [32msalaboy-environment-jx-salaboy-8nh6l-1[0m stage [32mfrom-build-pack[0m and container [32mworking-dir-initializer[0m
+
+Showing logs for build [32msalaboy-environment-jx-salaboy-8nh6l-1[0m stage [32mfrom-build-pack[0m and container [32mplace-tools[0m
+
+Showing logs for build [32msalaboy-environment-jx-salaboy-8nh6l-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-salaboy-environment-jx-salaboy-8nh6l-gzcht[0m
+{"level":"info","ts":1595835792.2017627,"caller":"git/git.go:105","msg":"Successfully cloned https://github.com/*******/environment-**-*******-staging.git @ master in path /workspace/source"}
+{"level":"warn","ts":1595835792.2021818,"caller":"git/git.go:152","msg":"Unexpected error: creating symlink: symlink /tekton/home/.ssh /root/.ssh: file exists"}
+{"level":"info","ts":1595835792.2432795,"caller":"git/git.go:133","msg":"Successfully initialized and updated submodules in path /workspace/source"}
+
+Showing logs for build [32msalaboy-environment-jx-salaboy-8nh6l-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32msalaboy-environment-jx-salaboy-8nh6l-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:dbd2df124e98da2a6e94213517ca216cad70f9bf,3:a10935e3f2116169625e8b97dc53b23474fdca92
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git fetch origin --unshallow a10935e3f2116169625e8b97dc53b23474fdca92: dbd2df124e98da2a6e94213517ca216cad70f9bf:
+DEBUG: ran git fetch --unshallow origin a10935e3f2116169625e8b97dc53b23474fdca92: dbd2df124e98da2a6e94213517ca216cad70f9bf: in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git branch
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git checkout master
+DEBUG: ran git checkout master in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git reset --hard dbd2df124e98da2a6e94213517ca216cad70f9bf
+DEBUG: ran git reset --hard dbd2df124e98da2a6e94213517ca216cad70f9bf in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
+DEBUG: ran clean --force -d . in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git merge a10935e3f2116169625e8b97dc53b23474fdca92
+DEBUG: ran git merge a10935e3f2116169625e8b97dc53b23474fdca92 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e dbd2df124e98da2a6e94213517ca216cad70f9bf..HEAD
+Merged SHA a10935e3f2116169625e8b97dc53b23474fdca92 with commit message 'The command `** delete application` was run by ******* and it generated this Pull Request' into base branch master
+
+Showing logs for build [32msalaboy-environment-jx-salaboy-8nh6l-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-helm-build[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
