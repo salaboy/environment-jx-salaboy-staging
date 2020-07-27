@@ -10,3 +10,6 @@ dependencies:
 - name: online-store
   repository: http://jenkins-x-chartmuseum:8080
   version: 0.0.6
+- name: products-service
+  repository: http://jenkins-x-chartmuseum:8080
+  version: 0.0.1
